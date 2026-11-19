@@ -1,13 +1,13 @@
 #Toma un número y comprueba si es primo o no
 
 n= int (input("Introduce un número: "))
-div=0
 
-for i in range(1, n + 1):
-    if n % i == 0:
-            div=div+1
-            
-if div==0 or n==1:
-    print("El", n, "es primo")
+if n <= 1:
+        print("El", n, "no es primo")
+
+for i in range(2, int(n/2)+1):
+        if n % i == 0:
+                print ("El", n, " no es primo")
+                break
 else:
-    print("El", n, " no es primo")
+       print("El", n, " es primo")
