@@ -1,5 +1,6 @@
 numero = int(input("Introduce un número: "))
-
-for i in range(1, numero + 1):
+x=int((numero/2)+1)
+for i in range(1, x):
     if numero % i == 0:
         print(i)
+print(numero)
